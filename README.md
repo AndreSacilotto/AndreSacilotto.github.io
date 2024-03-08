@@ -1,6 +1,7 @@
 <h1 align="center">
   :mortar_board: Portfolio WebSite :mortar_board:
 </h1>
+This project is a static page made with react.js 18, typescript, tailwind, and vite.
 
 <br>
 
@@ -15,3 +16,5 @@ Dive in to explore my journey and the work I'm passionate about!
 My professional contact info can be fount at my [LinkedIn](https://www.linkedin.com/in/andre-sacilotto)
 
 ## :runner: Running Locally
+
+To run it locally just: `npm run build & npm run preview`
