@@ -9,7 +9,7 @@ export interface ProjectInfo
 	description: string;
 }
 
-const data: ProjectInfo[] = [
+export const projectData: ProjectInfo[] = [
 	{
 		public: false,
 		project: "Chrome Extension",
@@ -52,7 +52,7 @@ const data: ProjectInfo[] = [
 		public: true,
 		project: "Pixel Bomber Game",
 		link: ["https://github.com/AndreSacilotto/PixelBomberGame-JS"],
-		description: "A simple game bomber man game project made with express and socket.io in javascript"
+		description: "A simple game bomber man game project made with express and socket.io in javascript."
 	},
 	{
 		public: true,
@@ -64,13 +64,13 @@ const data: ProjectInfo[] = [
 		public: true,
 		project: "AHK Scripts",
 		link: ["https://github.com/AndreSacilotto/AHK_Scripts"],
-		description: "A collection of automation scripts build with autohotkey language",
+		description: "A collection of automation scripts build with autohotkey language.",
 	},
 	{
 		public: true,
 		project: "Gang of Four",
 		link: ["https://github.com/AndreSacilotto/GangOfFour"],
-		description: "Project where I try to implement all of Gang Of Four patterns in c#",
+		description: "Project where I try to implement all of Gang Of Four patterns in c#.",
 	},
 	{
 		public: true,
@@ -88,4 +88,61 @@ const data: ProjectInfo[] = [
 
 // data.sort((a, b) => a.project.localeCompare(b.project))
 
-export default data;
+// export interface Knowledge
+// {
+// 	framework: KnowledgeInfo[],
+// 	lib: KnowledgeInfo[],
+// 	language: KnowledgeInfo[],
+// 	tool: KnowledgeInfo[],
+// 	software: KnowledgeInfo[],
+// }
+
+export interface KnowledgeInfo
+{
+	name: string;
+	iconify?: string;
+	type: "framework" | "lib" | "language" | "markup" | "tool" | "software";
+}
+
+export const knowledgeData : KnowledgeInfo[] = [
+	{ name: "SASS", iconify: "vscode-icons:file-type-sass", type : "lib" },
+	{ name: "Tailwind", iconify: "vscode-icons:file-type-tailwind", type : "lib" },
+	{ name: "React", iconify: "vscode-icons:file-type-reactjs", type : "framework" },
+	{ name: "Next", iconify: "vscode-icons:file-type-next", type : "lib" },
+	{ name: "Node", iconify: "vscode-icons:file-type-node", type : "lib" },
+	{ name: "Svelte", iconify: "vscode-icons:file-type-svelte", type : "framework" },
+	{ name: "Redux", iconify: "", type : "lib" },
+	{ name: "Unity", iconify: "vscode-icons:file-type-light-shaderlab", type : "framework" },
+	{ name: "Godot", iconify: "vscode-icons:file-type-gdscript", type : "framework" },
+	{ name: ".Net (XUnit, ASP)", iconify: "vscode-icons:file-type-nuget", type : "framework" },
+	{ name: "Dart", iconify: "vscode-icons:file-type-dartlang", type : "language" },
+	{ name: "Rust", iconify: "vscode-icons:file-type-rust", type : "language" },
+	{ name: "OS CLI", iconify: "vscode-icons:file-type-bat", type : "tool" },
+	{ name: "Assembly", iconify: "vscode-icons:file-type-assembly", type : "language" },
+	{ name: "PHP", iconify: "vscode-icons:file-type-php2", type : "language" },
+	{ name: "SQL", iconify: "vscode-icons:file-type-sqlite", type : "language" },
+	{ name: "C++", iconify: "vscode-icons:file-type-cpp3", type : "language" },
+	{ name: "Lua", iconify: "vscode-icons:file-type-lua", type : "language" },
+	{ name: "Git", iconify: "vscode-icons:file-type-git", type : "tool" },
+	{ name: "Python", iconify: "vscode-icons:file-type-python", type : "language" },
+	{ name: "HTML", iconify: "vscode-icons:file-type-html", type : "language" },
+	{ name: "CSS", iconify: "vscode-icons:file-type-css", type : "language" },
+	{ name: "TS", iconify: "vscode-icons:file-type-typescript-official", type : "language" },
+	{ name: "Autohotkey", iconify: "vscode-icons:file-type-autohotkey", type : "language" },
+	{ name: "C", iconify: "vscode-icons:file-type-c3", type : "language" },
+	{ name: "Java", iconify: "vscode-icons:file-type-jar", type : "language" },
+	{ name: "C#", iconify: "vscode-icons:file-type-csharp2", type : "language" },
+	{ name: "JS", iconify: "vscode-icons:file-type-js-official", type : "language" },
+	{ name: "Docker", iconify: "vscode-icons:file-type-docker", type : "tool" },
+	{ name: "JSON", iconify: "vscode-icons:file-type-json", type : "markup" },
+	{ name: "XML", iconify: "vscode-icons:file-type-xml", type : "markup" },
+	{ name: "YAML", iconify: "vscode-icons:file-type-yaml", type : "markup" },
+	{ name: "Regex", iconify: "material-symbols:award-star-outline-rounded", type : "language" },
+	{ name: "LaTeX", iconify: "vscode-icons:file-type-latex", type : "markup" },
+	{ name: "Markdown", iconify: "vscode-icons:file-type-markdown", type : "markup" },
+	{ name: "Microsoft Excel", iconify: "vscode-icons:file-type-excel", type : "software" },
+	{ name: "Microsoft Word", iconify: "vscode-icons:file-type-word", type : "software" },
+	{ name: "Adobe Photoshop", iconify: "vscode-icons:file-type-photoshop", type : "software" },
+	{ name: "Adobe Premiere", iconify: "vscode-icons:file-type-prproj", type : "software" },
+	{ name: "Adobe Illustrator", iconify: "vscode-icons:file-type-ai", type : "software" },
+]
