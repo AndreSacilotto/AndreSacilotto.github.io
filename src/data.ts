@@ -32,6 +32,12 @@ export const projectData: ProjectInfo[] = [
 	},
 	{
 		public: true,
+		project: "Full-Stack ONNX",
+		link: ["https://github.com/AndreSacilotto/Full_Stack_ONNX_Test"],
+		description: "A full stack application, the objective of the test was see the capacity of creating a front-end that comunicates server and database, that in realtime analyze a video using ONNX AI model and display the bound box"
+	},
+	{
+		public: true,
 		project: "Web Tetris",
 		link: ["https://github.com/231396/Rolling-Tetris-Web"],
 		description: "The final project of the web class, where we have to use JS/HTML/CSS with canvas for the game and PHP to communicate with LiteSQL database that was used for the leaderboard."
